@@ -6,7 +6,7 @@ local CoreGui = game:GetService("CoreGui")
 hookfunction(gcinfo, function()
 return math.random(1500, 2500)
 end)
-local repo = "https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/"
+local repo = "https://raw.githubusercontent.com/NEXT-HUB/wally-rblx-LinoriaLib/main/Library.lua"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 local SaveManager = loadstring(game:HttpGet(repo .. "addons/SaveManager.lua"))()
 local ThemeManager = loadstring(game:HttpGet(repo .. "addons/ThemeManager.lua"))()
