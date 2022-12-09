@@ -1,13 +1,18 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("YouTube Example Hub", "Ocean")
     -- MAIN
-    local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
+    local Main1 = Window:NewTab("Main1")
+    local MainSection = Main:NewSection("Main1")
 
 
     MainSection:NewButton("Mukuro V1", "This script made by Quartyz#3561", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf'))()
     end)
+    
+    
+        local Main2 = Window:NewTab("Main2")
+    local MainSection = Main:NewSection("Main2")
+    
     MainSection:NewButton("Mukuro V2", "This script made by Quartyz#3561", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BF'))()
     end)
