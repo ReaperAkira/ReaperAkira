@@ -1,15 +1,14 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local window = Library.CreateLib("Mukuro hub", "DarkTheme")
+local Window = Library.CreateLib("YouTube Example Hub", "Ocean")
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
 
--- MAIN
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Main")
 
+    MainSection:NewButton("Mukuro v1", "Mukuro hub made by Quartyz#3561 https://discord.gg/59fVYNYUSQ", function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
+    end)
 
-MainSection:NewButton("Mukuro v1", "Mukuro hub made by Quartyz#3561 https://discord.gg/59fVYNYUSQ", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
-end)
-
-MainSection:NewButton("Mukuro v2", "Mukuro hub made by Quartyz#3561 https://discord.gg/59fVYNYUSQ", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BF"))()
-end)
+    MainSection:NewButton("Mukuro v2", "Mukuro hub made by Quartyz#3561 https://discord.gg/59fVYNYUSQ", function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BF"))()
+    end)
