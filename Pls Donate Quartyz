@@ -1,14 +1,21 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Mukuro BF Hub", "DarkTheme")
-    -- MAIN
-    local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
+local Window = Library.CreateLib("BF Hub", "DarkTheme")
+    -- FARM
+    local Farm = Window:NewTab("Farm")
+    local FarmSection = Farm:NewSection("Mukuro")
 
 
-    MainSection:NewButton("Mukuro V1", "This script made by Quartyz#3561", function()
+    FarmSection:NewButton("Mukuro Hub V1", "This script made by Quartyz#3561", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf'))()
     end)
     
-    MainSection:NewButton("Mukuro V2", "This script made by Quartyz#3561", function()
+    FarmSection:NewButton("Mukuro Hub V2", "This script made by Quartyz#3561", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BF'))()
+    end)
+
+    local FarmSection = Farm:NewSection("Thunder")
+    
+
+    FarmSection:NewButton("Thunder Hub", "IDK", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script'))()
     end)
