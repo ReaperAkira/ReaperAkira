@@ -1,4 +1,3 @@
-if game.Placeid == 3214114884 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20ESP.txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20HITBOX%20EXPANDER.txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20SILENT%20AIM.txt"))()
