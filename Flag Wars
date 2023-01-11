@@ -1,11 +1,5 @@
 if game.Placeid == 3214114884 then
---Compat Script
-local LoadStrings = {
-    "%20ESP.txt",
-    "%20TRIGGER%20BOT.txt",
-    "%20SILENT%20AIM.txt"
-}
-
-for _, ExternalScript in next, LoadStrings do
-    loadstring(game:HttpGet("https://github.com/ReaperAkira/ReaperAkira/blob/main/Flag%20Wars"..))();
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20ESP.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20HITBOX%20EXPANDER.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20SILENT%20AIM.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/Flag%20Wars%20TRIGGER%20BOT.txt"))()
