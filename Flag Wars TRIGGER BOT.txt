@@ -1,0 +1,24 @@
+local currPlayer = game:GetService('Players').LocalPlayer
+local servPlayer = game:GetService('Players')
+local currPlayerCharacter = currPlayer.Character or currPlayer.CharacterAdded:wait()
+local currMouse = currPlayer:GetMouse()
+local currCamera = game:GetService("Workspace").CurrentCamera
+
+local RunService = game:GetService("RunService")
+
+
+function trigBot()
+    local ScreenPoint = currCamera:ScreenPointToRay(currMouse.X, currMouse.Y)
+    local Ray = Ray.new(ScreenPoint.Origin, ScreenPoint.Direction * 9999)
+    local Target, Position = workspace:FindPartOnRayWithIgnoreList(Ray, {currPlayerCharacter,workspace.CurrentCamera})
+    if Target and Position and servPlayer:GetPlayerFromCharacter(Target.Parent) and Target.Parent.Humanoid.Health > 0 or Target and Position and servPlayer:GetPlayerFromCharacter(Target.Parent.Parent) and Target.Parent.Parent.Humanoid.Health > 0 then
+        local currTarget = servPlayer:GetPlayerFromCharacter(Target.Parent) or servPlayer:GetPlayerFromCharacter(Target.Parent.Parent)
+        if currTarget.Team ~= currPlayer.Team and currTarget ~= currPlayer then
+            mouse1click()
+        end
+    end
+end
+
+RunService.Stepped:Connect(function()
+trigBot()
+end)
