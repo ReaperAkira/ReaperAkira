@@ -1,4 +1,5 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/project%20lazarus'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/projectlazarus.lua'))()
 local old
 old = hookmetamethod(game, "__namecall", newcclosure(function(self,...)
    local args = {...}
