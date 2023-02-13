@@ -11,9 +11,10 @@ folder = game:GetService("Players").LocalPlayer.Backpack
 for i,v in pairs(folder:GetChildren()) do
    if v:IsA("ModuleScript") then
        local gun = require(v)
+       gun.Semi = false
        gun.StoredAmmo = math.huge
        gun.Ammo = math.huge
-       gun.Damage = {Max = 1500000, Min = 10000}
+       gun.Damage = {Max = math.huge, Min = math.huge}
        gun.Spread = {Min = 0, Max = 0}
        gun.Pitch = { Min = 0, Max = 0 }
        gun.ViewKick = { Pitch = {Min = 0, Max = 0}, Yaw = {Min = 0, Max = 0} }
@@ -23,6 +24,7 @@ folder.ChildAdded:connect(function(child)
   if child.ClassName == "ModuleScript" then
       task.wait(1)
        local gun = require(child)
+       gun.Semi = false
        gun.StoredAmmo = math.huge
        gun.Ammo = math.huge
        gun.Damage = {Max = math.huge, Min = math.huge}
