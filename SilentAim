@@ -10,7 +10,7 @@ end
 local SilentAimSettings = {
     Enabled = false,
     
-    ClassName = "Universal Silent Aim - Averiias, Stefanuk12, xaxa",
+    ClassName = "Universal Silent Aim - Averiias, Stefanuk12, ReaperAkira",
     ToggleKey = "RightAlt",
     
     TeamCheck = false,
