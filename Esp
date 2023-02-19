@@ -117,3 +117,5 @@ game.Players.PlayerAdded:Connect(function(v)
     end
     coroutine.wrap(boxesp)()
 end)
+game.StarterGui:SetCore("SendNotification", {
+script:Destroy()})
