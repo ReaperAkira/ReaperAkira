@@ -241,6 +241,7 @@ end
 
 -- ui creating & handling
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/GuiLibrary"))()
+Library:SetWatermark("")
 
 local Window = Library:CreateWindow("Universal Silent Aim, by Averiias, ReaperAkira, and Stefanuk12")
 local GeneralTab = Window:AddTab("General")
@@ -266,6 +267,7 @@ local MainBOX = GeneralTab:AddLeftTabbox("Main") do
     Main:AddDropdown("TargetPart", {Text = "Target Part", Default = SilentAimSettings.TargetPart, Values = {"Head", "HumanoidRootPart", "Random"}}):OnChanged(function()
         SilentAimSettings.TargetPart = Options.TargetPart.Value
     end)
+    
     Main:AddDropdown("Method", {Text = "Silent Aim Method", Default = SilentAimSettings.SilentAimMethod, Values = {
         "Raycast","FindPartOnRay",
         "FindPartOnRayWithWhitelist",
