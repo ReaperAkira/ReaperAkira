@@ -241,7 +241,6 @@ end
 
 -- ui creating & handling
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/GuiLibrary"))()
-Library:SetWatermark("")
 
 local Window = Library:CreateWindow("Universal Silent Aim, by Averiias, ReaperAkira, and Stefanuk12")
 local GeneralTab = Window:AddTab("General")
