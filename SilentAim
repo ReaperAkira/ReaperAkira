@@ -243,7 +243,7 @@ end
 
 -- ui creating & handling
 local Library = loadstring(game:HttpGet(repo .. "GuiLibrary"))()
-Library:SetWatermark("Silent Aim")
+Library:SetWatermark(" Silent Aim ")
 
 local Window = Library:CreateWindow("Universal Silent Aim, by Averiias, ReaperAkira, and Stefanuk12")
 local GeneralTab = Window:AddTab("General")
