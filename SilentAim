@@ -1,4 +1,6 @@
 -- init
+local repo = "https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/"
+local ThemeManager = loadstring(game:HttpGet(repo .. "Theme_Gui"))()
 if not game:IsLoaded() then 
     game.Loaded:Wait()
 end
@@ -240,7 +242,7 @@ local function getClosestPlayer()
 end
 
 -- ui creating & handling
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/GuiLibrary"))()
+local Library = loadstring(game:HttpGet(repo .. "GuiLibrary"))()
 
 local Window = Library:CreateWindow("Universal Silent Aim, by Averiias, ReaperAkira, and Stefanuk12")
 local GeneralTab = Window:AddTab("General")
@@ -287,6 +289,13 @@ local MainBOX = GeneralTab:AddLeftTabbox("Main") do
     Options.HitChance:OnChanged(function()
         SilentAimSettings.HitChance = Options.HitChance.Value
     end)
+local Tab = Window:AddTab("Settings")
+
+ThemeManager:SetLibrary(Library)
+    
+ThemeManager:SetFolder("OminousVibes")
+    
+ThemeManager:ApplyToTab(Tab)
 end
 
 local MiscellaneousBOX = GeneralTab:AddLeftTabbox("Miscellaneous")
