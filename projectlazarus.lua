@@ -8,10 +8,10 @@ hookfunction(gcinfo, function()
 return math.random(1500, 2500)
 end)
 
-local repo = "https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/"
-local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
-local SaveManager = loadstring(game:HttpGet(repo .. "addons/SaveManager.lua"))()
-local ThemeManager = loadstring(game:HttpGet(repo .. "addons/ThemeManager.lua"))()
+local repo = "https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/"
+local Library = loadstring(game:HttpGet(repo .. "GuiLibrary"))()
+local SaveManager = loadstring(game:HttpGet(repo .. "SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet(repo .. "ThemeManager.lua"))()
 
 local protect_gui = syn and syn.protect_gui or function(obj: Instance) end
 
