@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/project%20lazarus", true))()
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -13,6 +12,8 @@ local repo = "https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/"
 local Library = loadstring(game:HttpGet(repo .. "GuiLibrary"))()
 local SaveManager = loadstring(game:HttpGet(repo .. "ThemeManager.lua"))()
 local ThemeManager = loadstring(game:HttpGet(repo .. "Theme_Gui"))()
+loadstring(game:HttpGet(repo .. "project%20lazarus"))()
+loadstring(game:HttpGet(repo .. "projectlazarus"))()
 
 local protect_gui = syn and syn.protect_gui or function(obj: Instance) end
 
