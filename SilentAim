@@ -259,6 +259,14 @@ local MainBOX = GeneralTab:AddLeftTabbox("Main") do
         
         mouse_box.Visible = SilentAimSettings.Enabled
     end)
+
+    Main:AddToggle("Keybinds", { Text = "Show Keybinds Menu", Default = true }):OnChanged(function()
+        Library.KeybindFrame.Visible = Toggles.Keybinds.Value
+    end)
+    
+    Main:AddToggle("Watermark", { Text = "Show Watermark", Default = true }):OnChanged(function()
+        Library:SetWatermarkVisibility(Toggles.Watermark.Value)
+    end)
     
     Main:AddToggle("TeamCheck", {Text = "Team Check", Default = SilentAimSettings.TeamCheck}):OnChanged(function()
         SilentAimSettings.TeamCheck = Toggles.TeamCheck.Value
@@ -290,14 +298,6 @@ local MainBOX = GeneralTab:AddLeftTabbox("Main") do
     Options.HitChance:OnChanged(function()
         SilentAimSettings.HitChance = Options.HitChance.Value
     end)
-local Tab = Window:AddTab("Settings")
-
-ThemeManager:SetLibrary(Library)
-    
-ThemeManager:SetFolder("OminousVibes")
-    
-ThemeManager:ApplyToTab(Tab)
-end
 
 local MiscellaneousBOX = GeneralTab:AddLeftTabbox("Miscellaneous")
 local FieldOfViewBOX = GeneralTab:AddLeftTabbox("Field Of View") do
@@ -396,6 +396,16 @@ resume(create(function()
         end
     end)
 end))
+
+local Tab = Window:AddTab("Settings")
+
+ThemeManager:SetLibrary(Library)
+    
+ThemeManager:SetFolder("OminousVibes")
+    
+ThemeManager:ApplyToTab(Tab)
+end
+
 
 -- hooks
 local oldNamecall
