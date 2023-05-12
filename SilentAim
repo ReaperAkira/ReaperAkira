@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/gui_button"))()
 -- init
 local repo = "https://raw.githubusercontent.com/ReaperAkira/ReaperAkira/main/"
 local ThemeManager = loadstring(game:HttpGet(repo .. "Theme_Gui"))()
