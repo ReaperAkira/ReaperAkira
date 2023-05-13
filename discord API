@@ -1,0 +1,33 @@
+{
+  "Data": {
+    "Script-Ware": {
+      "web": "https://script-ware.com/w",
+      "disc": "https://script-ware.com/discord",
+      "v3rm": "https://v3rmillion.net/showthread.php?tid=1090651",
+      "dl": "https://script-ware.com/w",
+      "unc": true,
+      "type": "Script-Executor",
+      "platform": {
+        "Windows": {
+          "status": 0,
+          "exp_ver": "1.0.60.0",
+          "rbx_ver": "version-9898fbc5d6bc4b1e",
+          "is_free": false,
+          "upd_unix": 1681322466
+        },
+        "Mac": {
+          "status": 1,
+          "exp_ver": "3.1.0",
+          "rbx_ver": "version-9898fbc5d6bc4b1e",
+          "is_free": false,
+          "upd_unix": 1681322466
+        }
+      }
+    },
+    // ect
+  },
+  "ROBLOX": {
+    "ver": "version-9898fbc5d6bc4b1e",
+    "upd_unix": 1681322162
+  }
+}
